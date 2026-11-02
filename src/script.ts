@@ -2,7 +2,10 @@
 
 // console.log("Hello from script.ts");
 
-import "./video1.config.js";
+
+
+// import "./video1.config.js";
+
 import "./video2.union.js";
 
 
