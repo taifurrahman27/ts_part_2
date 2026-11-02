@@ -2,4 +2,5 @@
 // console.log("Hello from script.ts");
 // import "./video1.config.js";
 // import "./video2.union.js";
-import "./video3.type&interface.js";
+// import "./video3.type&interface.js";
+import "./video5.special-types.js";
