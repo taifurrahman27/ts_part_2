@@ -6,6 +6,7 @@
 
 // import "./video1.config.js";
 
-import "./video2.union.js";
+// import "./video2.union.js";
 
 
+import "./video3.type&interface.js";
