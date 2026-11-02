@@ -5,4 +5,5 @@
 // import "./video3.type&interface.js";
 //  import "./video5.special-types.js";
 // import "./video6.type-assertion.js";
-import "./video7.narrowing.js";
+// import "./video7.narrowing.js";
+import "./video8.generic.js";
