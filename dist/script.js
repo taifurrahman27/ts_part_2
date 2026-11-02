@@ -6,4 +6,5 @@
 //  import "./video5.special-types.js";
 // import "./video6.type-assertion.js";
 // import "./video7.narrowing.js";
-import "./video9.generic.js";
+// import "./video9.generic.js";
+import "./video10.promises.js";
