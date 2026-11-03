@@ -1,43 +1,41 @@
 // console.log("Hello from video2.union.ts");
 
-const greetings=()=>{
-    console.log("Hello, Taifur Rahman");
-}
+const greetings = () => {
+  console.log("Hello, Taifur Rahman");
+};
 greetings();
 
-
-//*Literal Types
-type Status = "pending" 
-const status : Status = "pending"
+//* Literal Types
+type Status = "pending";
+const status: Status = "pending";
 console.log(status);
 
-
-//*Basic Union Types
+//* Basic Union Types
 type UserStatus = "active" | "inactive" | "banned";
 const userStatus: UserStatus = "active";
 console.log(userStatus);
 
-//*Literal Union Types
+//* Literal Union Types
 type UserRole = "admin" | "editor" | "viewer";
 const userRole: UserRole = "editor";
 console.log(userRole);
 
-//*Object Union Types
-
+//* Object Union Types
 type Admin = {
-    name: string;
-    age: number;
-    role: "admin";
-    privileges: string[];
+  name: string;
+  age: number;
+  role: "admin";
+  privileges: string[];
 };
-type member = {
-    name: string;
-    age: number;
-    role: "editor" | "viewer";
-    plan: "free" | "premium";
-};
-type UserUnion = Admin | member;    
 
+type Member = {
+  name: string;
+  age: number;
+  role: "editor" | "viewer";
+  plan: "free" | "premium";
+};
+
+type UserUnion = Admin | Member;
 
 // type User = {
 //     name: string;
@@ -51,10 +49,10 @@ type UserUnion = Admin | member;
 // };
 
 const user: UserUnion = {
-    name: "Taifur Rahman",
-    age: 30,
-    role: "admin",
-    privileges: ["create", "read", "update", "delete"]
+  name: "Taifur Rahman",
+  age: 30,
+  role: "admin",
+  privileges: ["create", "read", "update", "delete"],
 };
 
 console.log(user);
